@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		406082042526686500438ABC /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406082032526686500438ABC /* FruitCardView.swift */; };
+		406082622527440C00438ABC /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406082612527440C00438ABC /* StartButtonView.swift */; };
+		406082652527467500438ABC /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406082642527467500438ABC /* OnboardingView.swift */; };
 		40BAFC832526493E00538C66 /* FructusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BAFC822526493E00538C66 /* FructusApp.swift */; };
-		40BAFC852526493E00538C66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BAFC842526493E00538C66 /* ContentView.swift */; };
 		40BAFC872526494000538C66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40BAFC862526494000538C66 /* Assets.xcassets */; };
 		40BAFC8A2526494000538C66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40BAFC892526494000538C66 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		406082032526686500438ABC /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
+		406082612527440C00438ABC /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		406082642527467500438ABC /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		40BAFC7F2526493E00538C66 /* Fructus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fructus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BAFC822526493E00538C66 /* FructusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FructusApp.swift; sourceTree = "<group>"; };
-		40BAFC842526493E00538C66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40BAFC862526494000538C66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40BAFC892526494000538C66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		40BAFC8B2526494000538C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +37,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		406081FC2526661800438ABC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				40BAFC822526493E00538C66 /* FructusApp.swift */,
+				406082642527467500438ABC /* OnboardingView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		406081FD2526662200438ABC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				406082032526686500438ABC /* FruitCardView.swift */,
+				406082612527440C00438ABC /* StartButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		40BAFC762526493E00538C66 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +74,8 @@
 		40BAFC812526493E00538C66 /* Fructus */ = {
 			isa = PBXGroup;
 			children = (
-				40BAFC822526493E00538C66 /* FructusApp.swift */,
-				40BAFC842526493E00538C66 /* ContentView.swift */,
+				406081FD2526662200438ABC /* View */,
+				406081FC2526661800438ABC /* App */,
 				40BAFC862526494000538C66 /* Assets.xcassets */,
 				40BAFC8B2526494000538C66 /* Info.plist */,
 				40BAFC882526494000538C66 /* Preview Content */,
@@ -138,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40BAFC852526493E00538C66 /* ContentView.swift in Sources */,
+				406082042526686500438ABC /* FruitCardView.swift in Sources */,
+				406082622527440C00438ABC /* StartButtonView.swift in Sources */,
+				406082652527467500438ABC /* OnboardingView.swift in Sources */,
 				40BAFC832526493E00538C66 /* FructusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
