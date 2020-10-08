@@ -11,6 +11,8 @@ struct FruitCardView: View {
     
     // MARK: - Properties
     
+    var fruit: Fruit
+  
     @State private var isAnimating = false
     
     // MARK: - Body
@@ -19,7 +21,7 @@ struct FruitCardView: View {
         ZStack {
             VStack(spacing: 20) {
                 // FRUIT: Image
-                Image("blueberry")
+                Image(fruit.image)
                     .resizable()
                     .scaledToFit()
                     .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15),
@@ -29,7 +31,7 @@ struct FruitCardView: View {
                     .scaleEffect(isAnimating ? 1.0 : 0.6)
                 
                 // FRUIT: Title
-                Text("Blueberry")
+                Text(fruit.title)
                     .foregroundColor(Color.white)
                     .font(.largeTitle)
                     .fontWeight(.heavy)
@@ -39,7 +41,7 @@ struct FruitCardView: View {
                             y: 2)
                 
                 // FRUIT: Headline
-                Text("Blueberries are sweet, nutritious and wildly popular fruit all over the world.")
+                Text(fruit.headline)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 16)
@@ -62,10 +64,7 @@ struct FruitCardView: View {
                maxHeight: .infinity,
                alignment: .center)
         .background(
-            LinearGradient(gradient: Gradient(colors: [
-                Color("ColorBlueberryLight"),
-                Color("ColorBlueberryDark")
-            ]),
+            LinearGradient(gradient: Gradient(colors: self.fruit.gradientColors),
             startPoint: .top,
             endPoint: .bottom))
         .cornerRadius(20)
@@ -76,7 +75,7 @@ struct FruitCardView: View {
 
 struct FruitCardView_Previews: PreviewProvider {
     static var previews: some View {
-        FruitCardView()
+        FruitCardView(fruit: fruitsData[1])
             .previewLayout(.fixed(width: 320, height: 640))
     }
 }

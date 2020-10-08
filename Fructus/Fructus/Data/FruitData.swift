@@ -42,7 +42,7 @@ let fruitsData: [Fruit] = [
     ),
     Fruit(
       title: "Strawberry",
-      headline: "Widely appreciated for its characteristic aroma,  red color, juicy texture, and sweetness.",
+      headline: "Widely appreciated for its characteristic aroma, red color, juicy texture, and sweetness.",
       image: "strawberry",
       gradientColors: [Color("ColorStrawberryLight"), Color("ColorStrawberryDark")],
       description: """
