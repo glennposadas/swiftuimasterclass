@@ -13,8 +13,7 @@ struct OnboardingView: View {
     
     var fruits: [Fruit] = fruitsData
     
-    // MARK: - Functions
-    // MARK: Overrides
+    // MARK: - Body
 
     var body: some View {
         TabView {
